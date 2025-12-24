@@ -1,0 +1,88 @@
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/alerts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/alerts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/alerts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /admin/auth/user/ HTTP/1.1" 200 12097
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /admin/jsi18n/ HTTP/1.1" 200 3342
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+Unauthorized: /api/events/
+"POST /api/events/ HTTP/1.1" 401 172
+Unauthorized: /api/events/
+"POST /api/events/ HTTP/1.1" 401 172
+"POST /api/token/ HTTP/1.1" 200 489
+"POST /api/events/ HTTP/1.1" 201 159
+Unauthorized: /api/events/
+"POST /api/events/ HTTP/1.1" 401 172
+"POST /api/events/ HTTP/1.1" 201 169
+Unauthorized: /api/alerts/
+"GET /api/alerts/ HTTP/1.1" 401 172
+"GET /api/alerts/ HTTP/1.1" 200 551
+"POST /api/token/ HTTP/1.1" 200 489
+"GET /api/alerts/?severity=High HTTP/1.1" 200 551
+"GET /api/alerts/?status=Open HTTP/1.1" 200 551
+"PATCH /api/alerts/1/ HTTP/1.1" 200 261
+"GET /api/alerts/?status=Open HTTP/1.1" 200 297
+"POST /api/token/ HTTP/1.1" 200 489
+Forbidden: /api/events/
+"POST /api/events/ HTTP/1.1" 403 63
+Forbidden: /api/alerts/1/
+"PATCH /api/alerts/1/ HTTP/1.1" 403 63
+Internal Server Error: /api/docs/
+Traceback (most recent call last):
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/rest_framework/response.py", line 74, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/rest_framework/renderers.py", line 160, in render
+    template = self.resolve_template(template_names)
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/rest_framework/renderers.py", line 170, in resolve_template
+    return loader.select_template(template_names)
+  File "/home/sahil1/Documents/Repos/personal/Assignment/env/lib/python3.10/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: drf_spectacular/swagger_ui.html
+"GET /api/docs/ HTTP/1.1" 500 98147
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /api/docs/ HTTP/1.1" 200 4654
+"GET /api/schema/ HTTP/1.1" 200 22790
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
+/home/sahil1/Documents/Repos/personal/Assignment/threat_monitoring/config/settings.py changed, reloading.
+Watching for file changes with StatReloader
