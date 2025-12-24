@@ -30,10 +30,10 @@ class Command(BaseCommand):
 
         # 2️⃣ Execute raw SQL to set role parameters
         sql_commands = [
-            "ALTER ROLE threat_user SET client_encoding TO 'utf8';",
-            "ALTER ROLE threat_user SET default_transaction_isolation TO 'read committed';",
-            "ALTER ROLE threat_user SET timezone TO 'UTC';",
-            "GRANT ALL PRIVILEGES ON DATABASE threat_monitoring TO threat_user;"
+            f"ALTER ROLE {username} SET client_encoding TO 'utf8';",
+            f"ALTER ROLE {username} SET default_transaction_isolation TO 'read committed';",
+            f"ALTER ROLE {username} SET timezone TO 'UTC';",
+            f"GRANT ALL PRIVILEGES ON DATABASE threat_monitoring TO {username};"
         ]
 
         try:
