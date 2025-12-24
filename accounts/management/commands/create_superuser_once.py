@@ -33,7 +33,7 @@ class Command(BaseCommand):
             f"ALTER ROLE {username} SET client_encoding TO 'utf8';",
             f"ALTER ROLE {username} SET default_transaction_isolation TO 'read committed';",
             f"ALTER ROLE {username} SET timezone TO 'UTC';",
-            f"GRANT ALL PRIVILEGES ON DATABASE threat_monitoring TO {username};"
+            f"GRANT ALL PRIVILEGES ON DATABASE threat-monitoring-db TO {username};"
         ]
 
         try:
