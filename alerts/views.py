@@ -6,6 +6,7 @@ from rest_framework.permissions import IsAuthenticated
 from .models import Alert
 from .serializers import AlertSerializer
 from accounts.permissions import IsAdmin
+from common.pagination import StandardResultsSetPagination
 
 import logging
 logger = logging.getLogger(__name__)
@@ -18,6 +19,7 @@ class AlertAPIView(APIView):
     """
 
     permission_classes = [IsAuthenticated]
+    pagination_class = StandardResultsSetPagination
 
     def get(self, request):
         queryset = Alert.objects.select_related('event')
@@ -30,9 +32,12 @@ class AlertAPIView(APIView):
 
         if status_param:
             queryset = queryset.filter(status=status_param)
+        
+        paginator = self.pagination_class()
+        page = paginator.paginate_queryset(queryset, request)
 
-        serializer = AlertSerializer(queryset, many=True)
-        return Response(serializer.data, status=status.HTTP_200_OK)
+        serializer = AlertSerializer(page, many=True)
+        return paginator.get_paginated_response(serializer.data)
 
     def patch(self, request, pk):
         if not IsAdmin().has_permission(request, self):
