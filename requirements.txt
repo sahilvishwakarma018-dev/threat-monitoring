@@ -6,3 +6,4 @@ psycopg2-binary
 gunicorn
 dj-database-url
 drf_spectacular
+whitenoise
