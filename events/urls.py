@@ -1,7 +1,6 @@
 from django.urls import path
-
-# Tools App APIs
-from .views import EventCreateAPIView
+from .views import EventAPIView
 
 urlpatterns = [
-    path('', EventCreateAPIView.as_view(), name='event-create'),]
+    path('', EventAPIView.as_view(), name='event-create'),
+]

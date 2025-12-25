@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
-
+from accounts import views as account_view
 urlpatterns = [
     path('admin/', admin.site.urls),
 
@@ -28,6 +28,7 @@ urlpatterns = [
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path('api/docs/', SpectacularSwaggerView.as_view(url_name='schema')),
 
+    path('', account_view.home, name='home'),
     path('api/accounts/', include('accounts.urls')),
     path('api/events/', include('events.urls')),
     path('api/alerts/', include('alerts.urls')),
